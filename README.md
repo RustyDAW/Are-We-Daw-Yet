@@ -33,7 +33,10 @@ Join our community at the [`Rust Audio Discord`]!
   - [ ] edit multiple tracks at same time
   - [ ] chord helpers
   - [ ] midi slicer with presets
+  - [ ] groove templates
 - [ ] automation editor
+  - [ ] automation curves
+  - [ ] automation steps (e.g. velocity)
 - [ ] mixer strip
   - [ ] fader controls
   - [ ] pan controls
@@ -60,6 +63,8 @@ Join our community at the [`Rust Audio Discord`]!
     - [ ] stretch
     - [ ] pitch
 - [ ] step-sequencer
+  - [ ] P Steps
+  - [ ] Song Mode
 - [ ] pattern sequencer
 - [ ] recording
   - [ ] arm/disarm track
