@@ -1,4 +1,4 @@
-# RustyDAW: High-level Design
+# RustyDAW
 
 RustyDAW is a collection of tools for creating Digital Audio Workstations (DAWs).
 
@@ -21,51 +21,8 @@ We believe Rust to be the perfect language for this project because of its desig
  - The modules and crates system makes it easy to split your code into distinct modular components, and `cargo` handles all of the compilation for you
  - Rust's safety guarantees will significantly reduce the occurrence of DAWs crashing
 
-## Scope
+## Implementation plan
 
-**SECTION TODO.**
+We're going to break this massive "full-featured" DAW project into smaller projects so it's easier to work on.
 
-As stated above, we want a "modular ecosystem" of DAW tools, but let's strive for a "reference implementation" of a full DAW as a proof-of-concept.
-
-What should the ideal end-goal be? What would we be happy with releasing as a "1.0" version? A full Ableton Live / Bitwig-like DAW? List the scope of that end-goal project here: goals and non-goals. This may include general ideas of what we'd like to split into different modules and crates, such as "the audio system" (which may be split up further) and "the GUI system" (which may also be split up further).
-
-You don't have to list every fine-grained feature, device, and effect here, but the general project goal/idea should be there.
-
-After that, we can identify what a minimum-viable DAW might look like that is a step in that direction, and start a new design doc for it.
-
-Some stuff to think about:
-
-Goals
-
- - Identify the core algorithms that can be shared across separate DAW projects.
- - Identify key issues and learn from the mistakes of past open-source projects.
- - Create the individual modules needed to create the minimum-viable product.
- - Work together to create an example minimum-viable DAW.
- - Implement more features from there as we like.
- - GPLv3 everything, unless agreed upon otherwise beforehand.
-
-Non-Goals
-
- - This project will not deal with specific UI design details, only broad design concepts and reusable widgets.
- - Every file and plugin standard does not need to be implemented for a minimum-viable product. Identify which standards are absolutely necessary first.
- - Specific plugins like synthesizers, filters, delay, reverb, etc, should not be included in the minimum-viable product. Only focus on the core backend-algorithms for now.
-
-Basically, a list of requirements and "anti-requirements". You can also create a list of use-cases ("user journeys") here, if desired.
-
-## Design
-
-**SECTION TODO.**
-
-Once we know what we want to build towards, let's create a high-level overview of our proposed "1.0" design.
-
-This can include subsections on architecture decisions, GUI mockups, how we handle time, what information different event types hold, our design for a DSP graph, how we handle inputs and outputs, how we will communicate between the audio/GUI/other threads, etc. etc. etc.
-
-This doesn't need to go into crazy fine-grained detail, that's what other more-specific design docs are for.
-
-Sequence diagrams, system diagrams, and data flow diagrams can be useful to illustrate your ideas.
-
-## Alternatives considered
-
-**SECTION TODO.**
-
-During discussion, we'll probably end up generating a bunch of ideas that we ultimately shoot down for whatever reason. List those ideas and those reasons here.
+ - v0.1.0: [Multi-track Audio Editor](0-1-0_MultitrackAudioEditor/)
